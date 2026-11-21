@@ -1,0 +1,12 @@
+{
+  "name": "応援 TODO LIST",
+  "short_name": "応援TODO",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f6fc",
+  "theme_color": "#f8f6fc",
+  "icons": [
+    {"src": "/todolist_icon_192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/todolist_icon_512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}

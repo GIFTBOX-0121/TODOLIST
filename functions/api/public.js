@@ -1,1 +1,1 @@
-
+export async function onRequestGet({env}){const [t,l]=await Promise.all([env.DB.prepare('SELECT id,title,detail_html FROM todos WHERE visible=1 ORDER BY position,id').all(),env.DB.prepare('SELECT label,url FROM links ORDER BY slot').all()]);return Response.json({todos:t.results,links:l.results},{headers:{'Cache-Control':'no-store'}})}
